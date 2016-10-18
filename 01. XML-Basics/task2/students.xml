@@ -1,4 +1,5 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
 <students xmlns:students="urn:students">
     <student>
         <name>Pesho</name>
@@ -22,7 +23,7 @@
             </exam>
         </takenExams>
     </student>
-     <student>
+    <student>
         <name>Tosho</name>
         <sex>Male</sex>
         <birthDate>1918/10/10</birthDate>
