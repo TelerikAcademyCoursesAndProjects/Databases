@@ -1,1 +1,18 @@
-xml
+<?xml version="1.0"?>
+<students>
+    <student>
+        <name></name>
+        <sex></sex>
+        <birthDate></birthDate>
+        <phone></phone>
+        <email></email>
+        <course></course>
+        <specialty></specialty>
+        <facultyNumber></facultyNumber>
+        <takenExams>
+            <examName></examName>
+            <tutor></tutor>
+            <score></score>
+        </takenExams>
+    <student>
+</students>
