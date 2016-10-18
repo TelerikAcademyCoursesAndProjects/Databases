@@ -1,18 +1,20 @@
 <?xml version="1.0"?>
 <students>
     <student>
-        <name></name>
-        <sex></sex>
-        <birthDate></birthDate>
-        <phone></phone>
-        <email></email>
-        <course></course>
-        <specialty></specialty>
-        <facultyNumber></facultyNumber>
+        <name>Pesho</name>
+        <sex>Male</sex>
+        <birthDate>1988/10/10</birthDate>
+        <phone>+359888101010</phone>
+        <email>pesho@abv.bg</email>
+        <course>Databases</course>
+        <specialty>DB</specialty>
+        <facultyNumber>1027666</facultyNumber>
         <takenExams>
-            <examName></examName>
-            <tutor></tutor>
-            <score></score>
+            <exam>
+                <examName>C# Basics</examName>
+                <tutor>Gosho</tutor>
+                <score>4.5</score>
+            </exam>
         </takenExams>
     </student>
 </students>
