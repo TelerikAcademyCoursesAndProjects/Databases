@@ -44,4 +44,31 @@
             </exam>
         </takenExams>
     </student>
+    <student>
+        <name>Ivana</name>
+        <sex>Female</sex>
+        <birthDate>1998/10/10</birthDate>
+        <phone>+359888111122</phone>
+        <email>ivana@abv.bg</email>
+        <course>C# Advanced</course>
+        <specialty>JS</specialty>
+        <facultyNumber>2227666</facultyNumber>
+        <takenExams>
+            <exam>
+                <examName>C# Basic</examName>
+                <tutor>Emo</tutor>
+                <score>4.5</score>
+            </exam>
+            <exam>
+                <examName>C# JS OOP</examName>
+                <tutor>Grisho</tutor>
+                <score>5.5</score>
+            </exam>
+            <exam>
+                <examName>C# JS Apps</examName>
+                <tutor>Grisho</tutor>
+                <score>3.5</score>
+            </exam>
+        </takenExams>
+    </student>
 </students>
