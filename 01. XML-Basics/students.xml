@@ -15,6 +15,33 @@
                 <tutor>Gosho</tutor>
                 <score>4.5</score>
             </exam>
+            <exam>
+                <examName>C# Advanced</examName>
+                <tutor>Grisho</tutor>
+                <score>3.5</score>
+            </exam>
+        </takenExams>
+    </student>
+     <student>
+        <name>Tosho</name>
+        <sex>Male</sex>
+        <birthDate>1918/10/10</birthDate>
+        <phone>+359888111111</phone>
+        <email>tosho@abv.bg</email>
+        <course>JavaScript</course>
+        <specialty>C#</specialty>
+        <facultyNumber>1127666</facultyNumber>
+        <takenExams>
+            <exam>
+                <examName>HTML</examName>
+                <tutor>Emo</tutor>
+                <score>5.5</score>
+            </exam>
+            <exam>
+                <examName>C# Advanced</examName>
+                <tutor>Grisho</tutor>
+                <score>4.5</score>
+            </exam>
         </takenExams>
     </student>
 </students>
