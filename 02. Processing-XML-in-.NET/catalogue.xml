@@ -2,6 +2,18 @@
 <?xml-stylesheet type="text/xsl" href="students.xsl"?>
 <catalogue>
     <albums>
- <artist>   </artist>
+        <album>
+            <name></name>
+            <artist></artist>
+            <year></year>
+            <producer></producer>
+            <price></price>
+            <songs>
+                <song>
+                    <title></title>
+                    <duration></duration>
+                </song>
+            </songs>
+        </album>
     </albums>
 </catalogue>
