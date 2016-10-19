@@ -30,5 +30,34 @@
                 </song>
             </songs>
         </album>
+        <album>
+            <name>Hysteria</name>
+            <artist>Def Leppard</artist>
+            <year>1987</year>
+            <producer>Robert John Lange</producer>
+            <price>$15.00</price>
+            <songs>
+                <song>
+                    <title>Pour Some Sugar On Me</title>
+                    <duration>4:27</duration>
+                </song>
+                <song>
+                    <title>Women</title>
+                    <duration>5:43</duration>
+                </song>
+                <song>
+                    <title>God Of War</title>
+                    <duration>2:31</duration>
+                </song>
+                <song>
+                    <title>Empty Spaces</title>
+                    <duration>2:07</duration>
+                </song>
+                <song>
+                    <title>Love Bites</title>
+                    <duration>5:47</duration>
+                </song>
+            </songs>
+        </album>
     </albums>
 </catalogue>
