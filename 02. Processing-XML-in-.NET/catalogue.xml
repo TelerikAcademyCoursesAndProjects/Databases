@@ -3,15 +3,31 @@
 <catalogue>
     <albums>
         <album>
-            <name></name>
-            <artist></artist>
-            <year></year>
-            <producer></producer>
-            <price></price>
+            <name>The Wall</name>
+            <artist>Pink Floyd</artist>
+            <year>1979</year>
+            <producer>Bob Ezrin</producer>
+            <price>$20.00</price>
             <songs>
                 <song>
-                    <title></title>
-                    <duration></duration>
+                    <title>Another Brick in the Wall</title>
+                    <duration>4:01</duration>
+                </song>
+                 <song>
+                    <title>In The Flesh</title>
+                    <duration>3:21</duration>
+                </song>
+                 <song>
+                    <title>The Thin Ice</title>
+                    <duration>2:31</duration>
+                </song>
+                 <song>
+                    <title>Empty Spaces</title>
+                    <duration>2:07</duration>
+                </song>
+                 <song>
+                    <title>Is There Anybody Out There?</title>
+                    <duration>2:45</duration>
                 </song>
             </songs>
         </album>
