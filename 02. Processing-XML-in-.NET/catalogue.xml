@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="students.xsl"?>
 <catalogue>
     <albums>
         <album>
@@ -13,19 +12,19 @@
                     <title>Another Brick in the Wall</title>
                     <duration>4:01</duration>
                 </song>
-                 <song>
+                <song>
                     <title>In The Flesh</title>
                     <duration>3:21</duration>
                 </song>
-                 <song>
+                <song>
                     <title>The Thin Ice</title>
                     <duration>2:31</duration>
                 </song>
-                 <song>
+                <song>
                     <title>Empty Spaces</title>
                     <duration>2:07</duration>
                 </song>
-                 <song>
+                <song>
                     <title>Is There Anybody Out There?</title>
                     <duration>2:45</duration>
                 </song>
