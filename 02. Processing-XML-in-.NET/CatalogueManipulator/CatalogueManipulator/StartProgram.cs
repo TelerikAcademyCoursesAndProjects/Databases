@@ -12,6 +12,9 @@
 
             var test1 = new AlbumDeleter();
             test1.AlbumDeleterMethod();
+
+            var test2 = new XMLReaderSongExtractor();
+            test2.something();
         }
     }
 }
