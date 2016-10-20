@@ -18,14 +18,11 @@ namespace CatalogueManipulator
             {
                 foreach (XmlNode item in node)
                 {
-                    if (!artists.ContainsValue(item["artist"].InnerText))
-                    {
-                        artists.Add(i++, item["artist"].InnerText);
-                    }
+                    artists.Add(item["name"].InnerText, item["artist"].InnerText);
                 }
-                foreach (var item in artists.Values)
+                foreach (string key in artists.Keys)
                 {
-                    Console.WriteLine(item);
+                    Console.WriteLine("Artist - {0}, Album - {1}", artists[key], key);
                 }
             }
         }
