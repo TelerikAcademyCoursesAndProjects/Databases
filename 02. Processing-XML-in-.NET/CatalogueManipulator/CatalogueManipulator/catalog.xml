@@ -2,6 +2,35 @@
 <catalog>
     <albums>
         <album>
+            <name>The Dark Side of the Moon</name>
+            <artist>Pink Floyd</artist>
+            <year>1973</year>
+            <producer>Pink Floyd</producer>
+            <price>$10.00</price>
+            <songs>
+                <song>
+                    <title>Time</title>
+                    <duration>4:01</duration>
+                </song>
+                <song>
+                    <title>On The Run</title>
+                    <duration>3:21</duration>
+                </song>
+                <song>
+                    <title>Eclipse</title>
+                    <duration>2:31</duration>
+                </song>
+                <song>
+                    <title>Brain Damage</title>
+                    <duration>2:07</duration>
+                </song>
+                <song>
+                    <title>Speak To Me</title>
+                    <duration>2:45</duration>
+                </song>
+            </songs>
+        </album>
+        <album>
             <name>The Wall</name>
             <artist>Pink Floyd</artist>
             <year>1979</year>
