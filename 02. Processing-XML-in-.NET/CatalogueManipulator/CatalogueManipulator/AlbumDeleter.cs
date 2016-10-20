@@ -29,7 +29,7 @@ namespace CatalogueManipulator
 
             doc.Save(url);
             Console.WriteLine("All albums with price more than $20.00 have been removed");
-            Console.WriteLine();
+            Console.WriteLine("{0}", new string('-', 50));
         }
     }
 }

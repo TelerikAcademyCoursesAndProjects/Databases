@@ -47,7 +47,8 @@
     <Compile Include="DomParserExtractor.cs" />
     <Compile Include="StartProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XMLReaderSongExtractor.cs" />
+    <Compile Include="XDocumentAndLINQQueryTitleExtractor.cs" />
+    <Compile Include="XMLReaderSongTitleExtractor.cs" />
     <Compile Include="XPathExtractor.cs" />
   </ItemGroup>
   <ItemGroup>

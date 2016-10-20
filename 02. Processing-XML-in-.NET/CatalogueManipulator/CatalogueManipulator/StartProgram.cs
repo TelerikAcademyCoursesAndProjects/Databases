@@ -4,17 +4,20 @@
     {
         public static void Main()
         {
-            var extract = new DomParserExtractor();
-            extract.DomParserExtractorMethod();
+            var domParsExtract = new DomParserExtractor();
+            domParsExtract.DomParserExtractorMethod();
 
-            var test = new XPathExtractor();
-            test.XPathExtractorMethod();
+            var xPathExtract = new XPathExtractor();
+            xPathExtract.XPathExtractorMethod();
 
-            var test1 = new AlbumDeleter();
-            test1.AlbumDeleterMethod();
+            var albumDelete = new AlbumDeleter();
+            albumDelete.AlbumDeleterMethod();
 
-            var test2 = new XMLReaderSongExtractor();
-            test2.XMLReaderSongTitleExtractor();
+            var xmlReaderTitleExtract = new XMLReaderSongTitleExtractor();
+            xmlReaderTitleExtract.XMLReaderTitleExtractor();
+
+            var xDocLinqTitleExtract = new XDocumentAndLINQQueryTitleExtractor();
+            xDocLinqTitleExtract.XDocumentAndLINQQuerySongTitleExtractor();
         }
     }
 }

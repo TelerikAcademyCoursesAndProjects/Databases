@@ -27,7 +27,7 @@ namespace CatalogueManipulator
                 }
             }
 
-            Console.WriteLine();
+            Console.WriteLine("{0}", new string('-', 50));
         }
     }
 }
