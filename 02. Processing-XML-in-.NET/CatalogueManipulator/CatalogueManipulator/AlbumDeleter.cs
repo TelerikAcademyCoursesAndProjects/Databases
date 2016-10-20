@@ -24,7 +24,7 @@ namespace CatalogueManipulator
                     var trimedPrice = item["price"].InnerText.Substring(1);
                     if (Decimal.Parse(trimedPrice) > 20.00M)
                     {
-                        Console.WriteLine("blq blq");
+                        
                     }
 
                 }
