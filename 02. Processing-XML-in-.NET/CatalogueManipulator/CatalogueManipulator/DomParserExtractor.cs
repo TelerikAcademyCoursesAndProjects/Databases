@@ -4,15 +4,15 @@ using System.Xml;
 
 namespace CatalogueManipulator
 {
-    public class ArtistExtractor
+    public class DomParserExtractor
     {
-        public void ExtractorMethod()
+        public void DomParserExtractorMethod()
         {
             XmlDocument doc = new XmlDocument();
             doc.Load("../../catalog.xml");
             XmlNode rootNode = doc.DocumentElement;
             Hashtable artists = new Hashtable();
-            var i = 0;
+            Console.WriteLine("Using DOM parser:\n");
 
             foreach (XmlNode node in rootNode.ChildNodes)
             {
