@@ -21,7 +21,8 @@ namespace CatalogueManipulator
             {
                 foreach (XmlNode item in node)
                 {
-                    if (Decimal.Parse(item["price"].InnerText) > 20.00M)
+                    var trimedPrice = item["price"].InnerText.Substring(1);
+                    if (Decimal.Parse(trimedPrice) > 20.00M)
                     {
                         Console.WriteLine("blq blq");
                     }
