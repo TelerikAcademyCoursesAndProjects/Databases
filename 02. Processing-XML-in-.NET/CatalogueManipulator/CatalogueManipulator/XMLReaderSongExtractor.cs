@@ -1,38 +1,30 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Xml;
 
 namespace CatalogueManipulator
 {
     public class XMLReaderSongExtractor
     {
-        public void something()
+        public void XMLReaderSongTitleExtractor()
         {
             var url = "../../catalog.xml";
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(url);
+            var songTitles = new List<string>();
+            Console.WriteLine("Using XmlReader extract all song titles:\n");
 
-            string xPathQuery = "/catalog/albums/album";
-            XmlNodeList albumsList = xmlDoc.SelectNodes(xPathQuery);
-
-            Hashtable songs = new Hashtable();
-            Console.WriteLine("Using XmlReader:\n");
-
-            foreach (XmlNode artistNode in albumsList)
+            using (XmlReader reader = XmlReader.Create(url))
             {
-                foreach (XmlNode song in artistNode)
+                while (reader.Read())
                 {
-                    Console.WriteLine(song.InnerText);
+                    if (reader.NodeType == XmlNodeType.Element && reader.Name == "title")
+                    {
+                        songTitles.Add(reader.ReadElementString().Trim());
+                    }
                 }
-                    
-                songs.Add(artistNode["name"].InnerText, artistNode["artist"].InnerText);
             }
 
-            foreach (string key in songs.Keys)
-            {
-                Console.WriteLine("Artist - {0} ---> Album - {1}", songs[key], key);
-            }
-
+            Console.WriteLine(string.Join("\n", songTitles));
             Console.WriteLine();
         }
     }

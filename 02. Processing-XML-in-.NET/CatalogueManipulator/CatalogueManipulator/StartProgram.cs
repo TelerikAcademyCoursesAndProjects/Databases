@@ -14,7 +14,7 @@
             test1.AlbumDeleterMethod();
 
             var test2 = new XMLReaderSongExtractor();
-            test2.something();
+            test2.XMLReaderSongTitleExtractor();
         }
     }
 }
