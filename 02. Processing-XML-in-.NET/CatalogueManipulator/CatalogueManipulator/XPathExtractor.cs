@@ -27,6 +27,8 @@ namespace CatalogueManipulator
             {
                 Console.WriteLine("Artist - {0} ---> Album - {1}", artists[key], key);
             }
+
+            Console.WriteLine();
         }
     }
 }
