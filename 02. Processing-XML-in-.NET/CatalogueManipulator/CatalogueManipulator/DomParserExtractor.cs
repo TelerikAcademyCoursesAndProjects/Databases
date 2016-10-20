@@ -20,11 +20,14 @@ namespace CatalogueManipulator
                 {
                     artists.Add(item["name"].InnerText, item["artist"].InnerText);
                 }
+
                 foreach (string key in artists.Keys)
                 {
-                    Console.WriteLine("Artist - {0}, Album - {1}", artists[key], key);
+                    Console.WriteLine("Artist - {0} ---> Album - {1}", artists[key], key);
                 }
             }
+
+            Console.WriteLine();
         }
     }
 }

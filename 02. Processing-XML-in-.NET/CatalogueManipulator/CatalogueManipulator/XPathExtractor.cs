@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Xml;
 
 namespace CatalogueManipulator
@@ -7,15 +8,24 @@ namespace CatalogueManipulator
     {
         public void XPathExtractorMethod()
         {
+            var url = "../../catalog.xml";
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("../../catalog.xml");
-            string xPathQuery = "/catalog/albums/album/name";
+            xmlDoc.Load(url);
 
-            XmlNodeList beersList = xmlDoc.SelectNodes(xPathQuery);
+            string xPathQuery = "/catalog/albums/album";
+            XmlNodeList albumsList = xmlDoc.SelectNodes(xPathQuery);
 
-            foreach (XmlNode beerNode in beersList)
+            Hashtable artists = new Hashtable();
+            Console.WriteLine("Using XPath:\n");
+
+            foreach (XmlNode artistNode in albumsList)
             {
-                Console.WriteLine(beerNode.InnerText);
+                artists.Add(artistNode["name"].InnerText, artistNode["artist"].InnerText);
+            }
+
+            foreach (string key in artists.Keys)
+            {
+                Console.WriteLine("Artist - {0} ---> Album - {1}", artists[key], key);
             }
         }
     }
