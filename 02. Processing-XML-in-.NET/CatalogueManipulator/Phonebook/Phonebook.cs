@@ -19,6 +19,10 @@ namespace Phonebook
             {
                 while (!reader.EndOfStream)
                 {
+                    writer.Formatting = Formatting.Indented;
+                    writer.IndentChar = '\t';
+                    writer.Indentation = 1;
+
                     switch (lineNumber % 3)
                     {
                         case 0:
