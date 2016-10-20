@@ -9,6 +9,9 @@
 
             var test = new XPathExtractor();
             test.XPathExtractorMethod();
+
+            var test1 = new AlbumDeleter();
+            test1.AlbumDeleterMethod();
         }
     }
 }
