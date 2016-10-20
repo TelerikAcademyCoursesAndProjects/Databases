@@ -11,11 +11,12 @@ namespace CatalogueManipulator
     {
         public void AlbumDeleterMethod()
         {
+            var url = "../../catalog.xml";
             XmlDocument doc = new XmlDocument();
-            doc.Load("../../catalog.xml");
+            doc.Load(url);
             XmlNode rootNode = doc.DocumentElement;
 
-            Console.WriteLine("Using other:\n");
+            Console.WriteLine("Removing all albums with price more than $20.00:\n");
 
             foreach (XmlNode node in rootNode.ChildNodes)
             {
@@ -24,12 +25,14 @@ namespace CatalogueManipulator
                     var trimedPrice = item["price"].InnerText.Substring(1);
                     if (Decimal.Parse(trimedPrice) > 20.00M)
                     {
-                        
+                        // To use uncomment, BUT USE WITH CAUTION !
+                        //node.RemoveChild(item);
                     }
-
                 }
             }
 
+            doc.Save(url);
+            Console.WriteLine("All albums with price more than $20.00 have been removed");
             Console.WriteLine();
         }
     }
