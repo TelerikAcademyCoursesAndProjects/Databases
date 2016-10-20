@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Phonebook
+﻿namespace Phonebook
 {
-    class Program
+   public class Start
     {
-        static void Main(string[] args)
+       public static void Main()
         {
+            var phonebook = new Phonebook();
+            phonebook.CreatePhonebook();
         }
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AlbumDeleter.cs" />
     <Compile Include="DomParserExtractor.cs" />
+    <Compile Include="Phonebook.cs" />
     <Compile Include="StartProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XDocumentAndLINQQueryTitleExtractor.cs" />
