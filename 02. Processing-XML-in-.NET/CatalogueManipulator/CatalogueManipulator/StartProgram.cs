@@ -1,6 +1,9 @@
-﻿using System.Text;
+﻿using System;
+using System.IO;
+using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Schema;
 using System.Xml.Xsl;
 
 namespace CatalogueManipulator
@@ -57,6 +60,35 @@ namespace CatalogueManipulator
             XslCompiledTransform catalogueXslt = new XslCompiledTransform();
             catalogueXslt.Load("../../catalog.xsl");
             catalogueXslt.Transform(url, "../../catalog.html");
+
+            // task 16 
+            string xsdMarkup = File.ReadAllText("../../catalog.xsd");
+            XmlSchemaSet schemas = new XmlSchemaSet();
+            schemas.Add(string.Empty, XmlReader.Create(new StringReader(xsdMarkup)));
+            XDocument valid = XDocument.Load(url);
+            XDocument invalid = new XDocument(
+                new XElement(
+                    "Root",
+                    new XElement("Child1", "content1"),
+                    new XElement("Child2", "content2")));
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine("Validating valid document:");
+            bool errors = false;
+            valid.Validate(schemas, (o, e) =>
+            {
+                Console.WriteLine("{0}", e.Message);
+                errors = true;
+            });
+            Console.WriteLine("Valid {0}", errors ? "did not validate" : "validated");
+            Console.WriteLine();
+            Console.WriteLine("Validating invalid document:");
+            errors = false;
+            invalid.Validate(schemas, (o, e) =>
+            {
+                Console.WriteLine("{0}", e.Message);
+                errors = true;
+            });
+            Console.WriteLine("doc2 {0}", errors ? "did not validate" : "validated");
         }
     }
 }
