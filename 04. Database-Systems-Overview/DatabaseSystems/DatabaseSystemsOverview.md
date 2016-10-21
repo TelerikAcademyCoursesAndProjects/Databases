@@ -15,3 +15,10 @@ RDBMS stands for Relational Database Management System. It organizes data into r
 * And data from these tables are also retrieved using SQL
 * Provides facility primary key to uniquely identify the rows
 * Sharing a common column in two or more tables (primary and foreign key)
+
+### 3. Database table
+A table is a collection of related data held in a structured format within a database. It consists of fields (columns), and rows.
+
+In relational databases and flat file databases, a table is a set of data elements (values) using a model of vertical columns (identifiable by name) and horizontal rows, the cell being the unit where a row and column intersect.
+
+A table has a specified number of columns, but can have any number of rows. Each row is identified by one or more values appearing in a particular column subset. The columns subset which uniquely identifies a row is called the primary key.
