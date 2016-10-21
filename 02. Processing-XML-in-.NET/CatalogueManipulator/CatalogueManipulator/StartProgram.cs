@@ -52,7 +52,7 @@ namespace CatalogueManipulator
             xDocument.Add(CreateFileSystemXml.CreateFileSystemXmlTree("../../../"));
             xDocument.Save("../../traverseWithXElement.xml");
 
-            // task 14
+            // task 13 and 14
             var url = "../../catalog.xml";
             XslCompiledTransform catalogueXslt = new XslCompiledTransform();
             catalogueXslt.Load("../../catalog.xsl");
