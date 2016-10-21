@@ -61,3 +61,12 @@ Integrity constraints provide a mechanism for ensuring that data conforms to gui
 * FOREIGN KEY constraints to ensure that two keys share a primary key to foreign key relationship
 
 Constraints verify that the data conforms to a basic level of data consistency and correctness, preventing the introduction of dirty data.
+
+### 8. Pros and Cons of using indices
+The indexing increases the disk space usage and reduces the performance of adding, deleting, and updating, but in most cases the benefit of indices for data retrieval greatly exceeds the disadvantages.
+* *__Pros:__*
+  * Fast searching
+  * Fast sorting
+* *__Cons:__*
+  * Slow insert
+  * Slow update
