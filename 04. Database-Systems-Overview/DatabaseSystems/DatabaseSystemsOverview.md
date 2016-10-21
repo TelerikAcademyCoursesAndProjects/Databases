@@ -5,3 +5,13 @@
  * *__Network / graph:__* The network model is a database model conceived as a flexible way of representing objects and their relationships. Its distinguishing feature is that the schema, viewed as a graph in which object types are nodes and relationship types are arcs, is not restricted to being a hierarchy or lattice.
  * *__Relational (table):__* The relational model is a mathematical model defined in terms of predicate logic and set theory, and systems implementing it have been used by mainframe, midrange and microcomputer systems. Three key terms are used extensively in relational database models: relations, attributes, and domains. A relation is a table with columns and rows. The named columns of the relation are called attributes, and the domain is the set of values the attributes are allowed to take.
  * *__Object-oriented:__* In the 1990s, the object-oriented programming paradigm was applied to database technology, creating a new database model known as object databases. This aims to avoid the object-relational impedance mismatch - the overhead of converting information between its representation in the database (for example as rows in tables) and its representation in the application program (typically as objects). Even further, the type system used in a particular application can be defined directly in the database, allowing the database to enforce the same data integrity invariants. Object databases also introduce the key ideas of object programming, such as encapsulation and polymorphism, into the world of databases.
+ 
+ ### 2. RDBMS
+RDBMS stands for Relational Database Management System. It organizes data into related rows and columns.
+##### Features
+* It stores data in tables.
+* Tables have rows and column. 
+* These tables are created using SQL. 
+* And data from these tables are also retrieved using SQL
+* Provides facility primary key to uniquely identify the rows
+* Sharing a common column in two or more tables (primary and foreign key)
