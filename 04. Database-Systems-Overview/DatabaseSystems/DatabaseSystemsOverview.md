@@ -75,3 +75,36 @@ The indexing increases the disk space usage and reduces the performance of addin
 SQL (Structured Query Language) is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
 
 The main purpose of SQL is to provide a Structured way by which one can Query information in database using a standard Language.
+
+### 10. Transactions
+
+A transaction symbolizes a unit of work performed within a database management system (or similar system) against a database, and treated in a coherent and reliable way independent of other transactions. A transaction generally represents any change in database.
+
+Transactions provide an "all-or-nothing" proposition, stating that each work-unit performed in a database must either complete in its entirety or have no effect whatsoever. Further, the system must isolate each transaction from other transactions, results must conform to existing constraints in the database, and transactions that complete successfully must get written to durable storage.
+
+There are four important properties of database transactions these are represented by acronym ACID and also called ACID properties or database transaction where:
+
+A stands for Atomicity, Atom is considered to be smallest particle which can not be broken into further pieces.database transaction has to be atomic means either all steps of transaction completes or none of them.
+
+C stands for Consistency, transaction must leave database in consistent state even if it succeed or rollback.
+
+I is for Isolation
+Two database transactions happening at same time should not affect each other and has consistent view of database. This is achieved by using isolation levels in database.
+
+D stands for Durability
+Data has to be persisted successfully in database once transaction completed successfully and it has to be saved from power outage or other threats. This is achieved by saving data related to transaction in more than one places along with database.
+
+*__Example:__*
+
+For this example we will assume we have an Account table which represent a Bank Account and we will transfer money from one account to another account
+
+Request: transfer 900$ from Account 9001 to 9002
+```
+start transaction
+select balance from Account where Account_Number='9001';
+select balance from Account where Account_Number='9002';
+update Account set balance=balance-900 here Account_Number='9001' ;
+update Account set balance=balance+900 here Account_Number='9002' ;
+commit; //if all sql queries succed
+rollback; //if any of Sql queries failed or error
+```
