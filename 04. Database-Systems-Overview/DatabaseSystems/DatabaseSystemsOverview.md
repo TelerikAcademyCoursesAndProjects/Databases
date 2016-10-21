@@ -22,3 +22,8 @@ A table is a collection of related data held in a structured format within a dat
 In relational databases and flat file databases, a table is a set of data elements (values) using a model of vertical columns (identifiable by name) and horizontal rows, the cell being the unit where a row and column intersect.
 
 A table has a specified number of columns, but can have any number of rows. Each row is identified by one or more values appearing in a particular column subset. The columns subset which uniquely identifies a row is called the primary key.
+
+### 4. Primary vs. Foreign key
+Primary keys and foreign keys are two types of constraints that can be used to enforce data integrity in SQL Server tables.
+* *__Primary Key:__* A table typically has a column or combination of columns that contain values that uniquely identify each row in the table. This column, or columns, is called the primary key (PK) of the table and enforces the entity integrity of the table. Because primary key constraints guarantee unique data, they are frequently defined on an identity column. PKs don't allow Null or duplicate values.
+* *__Foreign Key:__* A foreign key (FK) is a column or combination of columns that is used to establish and enforce a link between the data in two tables to control the data that can be stored in the foreign key table. In a foreign key reference, a link is created between two tables when the column or columns that hold the primary key value for one table are referenced by the column or columns in another table. This column becomes a foreign key in the second table. It allows Null or duplicate values.
