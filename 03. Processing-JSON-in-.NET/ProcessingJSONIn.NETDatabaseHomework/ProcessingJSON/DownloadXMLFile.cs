@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace ProcessingJSON
 {
-    class DownloadXMLFile
+    public class DownloadXMLFile
     {
+        public void DownloadXMLFilesMethod()
+        {
+            var url = "../../rss.xml";
+            var webClient = new WebClient();
+            webClient.DownloadFile("https://www.youtube.com/feeds/videos.xml?channel_id=UCLC-vbm7OWvpbqzXaoAMGGw", url);
+        }
     }
 }
