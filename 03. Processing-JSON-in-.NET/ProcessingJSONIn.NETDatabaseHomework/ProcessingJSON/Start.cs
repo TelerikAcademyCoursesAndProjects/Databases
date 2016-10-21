@@ -7,8 +7,8 @@
             var rssDownloader = new DownloadXMLFile();
             rssDownloader.DownloadXMLFilesMethod();
 
-            var rssXmlToJson = new ConvertRssXmlToJson();
-            rssXmlToJson.ConvertXmlToJsonMethod();
+            var rssXmlToJson = new PrintVideoTitles();
+            rssXmlToJson.PrintVideoTitlesMethod();
         }
     }
 }
