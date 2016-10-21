@@ -50,3 +50,14 @@ __Advantages:__
   * Narrow tables: Having more fine-tuned tables allows your tables to have less columns and allows you to fit more records per data page.
   * Fewer indexes per table mean faster maintenance tasks such as index rebuilds.
   * Only join tables that you need.
+  
+  ### 7. Database Integrity Constraints
+Integrity constraints provide a mechanism for ensuring that data conforms to guidelines specified by the database administrator. The most common types of constraints include:
+
+* UNIQUE constraints to ensure that a given column is unique
+
+* NOT NULL constraints to ensure that no null values are allowed
+
+* FOREIGN KEY constraints to ensure that two keys share a primary key to foreign key relationship
+
+Constraints verify that the data conforms to a basic level of data consistency and correctness, preventing the introduction of dirty data.
