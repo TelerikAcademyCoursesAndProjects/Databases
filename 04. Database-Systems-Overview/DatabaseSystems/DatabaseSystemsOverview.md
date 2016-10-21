@@ -6,7 +6,7 @@
  * *__Relational (table):__* The relational model is a mathematical model defined in terms of predicate logic and set theory, and systems implementing it have been used by mainframe, midrange and microcomputer systems. Three key terms are used extensively in relational database models: relations, attributes, and domains. A relation is a table with columns and rows. The named columns of the relation are called attributes, and the domain is the set of values the attributes are allowed to take.
  * *__Object-oriented:__* In the 1990s, the object-oriented programming paradigm was applied to database technology, creating a new database model known as object databases. This aims to avoid the object-relational impedance mismatch - the overhead of converting information between its representation in the database (for example as rows in tables) and its representation in the application program (typically as objects). Even further, the type system used in a particular application can be defined directly in the database, allowing the database to enforce the same data integrity invariants. Object databases also introduce the key ideas of object programming, such as encapsulation and polymorphism, into the world of databases.
  
-### 2. RDBMS
+ ### 2. RDBMS
 RDBMS stands for Relational Database Management System. It organizes data into related rows and columns.
 ##### Features
 * It stores data in tables.
@@ -39,7 +39,7 @@ This type of relationship is not common because most information related in this
   * Store data that is short-lived and could be easily deleted by simply deleting the table.
   * Store information that applies only to a subset of the main table.
   
-### 6. Database normalization
+  ### 6. Database normalization
 Database normalization (or normalisation) is the process of organizing the columns (attributes) and tables (relations) of a relational database to minimize data redundancy.
 
 Normalization involves decomposing a table into less redundant (and smaller) tables without losing information; defining foreign keys in the old table referencing the primary keys of the new ones. The objective is to isolate data so that additions, deletions, and modifications of an attribute can be made in just one table and then propagated through the rest of the database using the defined foreign keys.
@@ -51,7 +51,7 @@ __Advantages:__
   * Fewer indexes per table mean faster maintenance tasks such as index rebuilds.
   * Only join tables that you need.
   
-### 7. Database Integrity Constraints
+  ### 7. Database Integrity Constraints
 Integrity constraints provide a mechanism for ensuring that data conforms to guidelines specified by the database administrator. The most common types of constraints include:
 
 * UNIQUE constraints to ensure that a given column is unique
@@ -71,7 +71,7 @@ The indexing increases the disk space usage and reduces the performance of addin
   * Slow insert
   * Slow update
   
-### 9. Purpose of SQL
+  ### 9. Purpose of SQL
 SQL (Structured Query Language) is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
 
 The main purpose of SQL is to provide a Structured way by which one can Query information in database using a standard Language.
