@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="PrintVideoTitles.cs" />
     <Compile Include="DownloadXMLFile.cs" />
+    <Compile Include="ProcessingVideos.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

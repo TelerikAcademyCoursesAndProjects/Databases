@@ -9,6 +9,9 @@
 
             var rssXmlToJson = new PrintVideoTitles();
             rssXmlToJson.PrintVideoTitlesMethod();
+
+            var processingVideos = new ProcessingVideos();
+            processingVideos.ProcessingVideosMethod();
         }
     }
 }

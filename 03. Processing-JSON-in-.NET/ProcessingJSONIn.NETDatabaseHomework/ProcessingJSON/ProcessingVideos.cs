@@ -17,12 +17,12 @@ namespace ProcessingJSON
             XDocument url = XDocument.Load("../../rss.xml");
             string jsonFromXml = JsonConvert.SerializeXNode(url, Formatting.Indented);
             var jsonObj = JObject.Parse(jsonFromXml);
-            
 
             var template = new { id = string.Empty, title = string.Empty, published = string.Empty };
             var videos = jsonObj["feed"]["entry"].Select(video => JsonConvert.DeserializeAnonymousType(video.ToString(), template));
             var htmlCreator = new StreamWriter("../../videos.html");
             htmlCreator.Write("<html><head><title>Videos from Telerik RSS</title><meta charset=\"UTF-8\"></head><body>");
+
             foreach (var video in videos)
             {
                 htmlCreator.WriteLine(
