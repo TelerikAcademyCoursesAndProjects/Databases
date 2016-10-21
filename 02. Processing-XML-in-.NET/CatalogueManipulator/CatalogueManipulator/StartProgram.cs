@@ -36,6 +36,9 @@ namespace CatalogueManipulator
             {
                 writer.WriteStartDocument();
                 writer.WriteStartElement("DirectoriesRoot");
+                writer.Formatting = Formatting.Indented;
+                writer.IndentChar = '\t';
+                writer.Indentation = 1;
                 CreateFileSystemXml.CreateFileSystemXmlTreeUsingXmlWriter("../../..", writer);
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
