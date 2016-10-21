@@ -70,3 +70,8 @@ The indexing increases the disk space usage and reduces the performance of addin
 * *__Cons:__*
   * Slow insert
   * Slow update
+  
+  ### 9. Purpose of SQL
+SQL (Structured Query Language) is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
+
+The main purpose of SQL is to provide a Structured way by which one can Query information in database using a standard Language.
