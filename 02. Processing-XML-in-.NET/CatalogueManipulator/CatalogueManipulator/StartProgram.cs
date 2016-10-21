@@ -74,11 +74,13 @@ namespace CatalogueManipulator
             Console.WriteLine(new string('-', 50));
             Console.WriteLine("Validating valid document:");
             bool errors = false;
+
             valid.Validate(schemas, (o, e) =>
             {
                 Console.WriteLine("{0}", e.Message);
                 errors = true;
             });
+
             Console.WriteLine("Valid {0}", errors ? "did not validate" : "validated");
             Console.WriteLine();
             Console.WriteLine("Validating invalid document:");
@@ -88,6 +90,7 @@ namespace CatalogueManipulator
                 Console.WriteLine("{0}", e.Message);
                 errors = true;
             });
+
             Console.WriteLine("doc2 {0}", errors ? "did not validate" : "validated");
         }
     }
