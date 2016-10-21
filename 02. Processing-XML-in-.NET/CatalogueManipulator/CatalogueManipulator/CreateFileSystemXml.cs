@@ -19,6 +19,7 @@ namespace CatalogueManipulator
 
             return result;
         }
+
         public static void CreateFileSystemXmlTreeUsingXmlWriter(string source, XmlWriter writer)
         {
             var directoryInfo = new DirectoryInfo(source);
