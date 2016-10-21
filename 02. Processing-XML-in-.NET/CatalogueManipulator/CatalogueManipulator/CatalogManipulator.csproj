@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlbumDeleter.cs" />
+    <Compile Include="CreateFileSystemXml.cs" />
     <Compile Include="DomParserExtractor.cs" />
     <Compile Include="Phonebook.cs" />
     <Compile Include="StartProgram.cs" />

@@ -1,4 +1,7 @@
-﻿namespace CatalogueManipulator
+﻿using System.Text;
+using System.Xml;
+
+namespace CatalogueManipulator
 {
     public class StartProgram
     {
@@ -26,7 +29,18 @@
 
             // task 8
             var albumsCreator = new XmlReaderAndXmlWriter();
-            albumsCreator.CreateAlbumsXml();  
+            albumsCreator.CreateAlbumsXml();
+
+            // task 9 
+            using (var writer = new XmlTextWriter("../../traverseWithXmlWriter.xml", Encoding.UTF8))
+            {
+                writer.WriteStartDocument();
+                writer.WriteStartElement("DirectoriesRoot");
+                CreateFileSystemXml.CreateFileSystemXmlTreeUsingXmlWriter("../../..", writer);
+                writer.WriteEndElement();
+                writer.WriteEndDocument();
+                writer.Close();
+            }
         }
     }
 }
