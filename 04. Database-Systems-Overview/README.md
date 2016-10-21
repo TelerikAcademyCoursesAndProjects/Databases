@@ -13,7 +13,7 @@
 1.  What are database integrity constraints and when are they used?
 1.  Point out the pros and cons of using indexes in a database.
 1.  What's the main purpose of the SQL language?
-1.  What are transactions used for?
+1.  What are transactions used for??
   * Give an example.
 1.  What is a NoSQL database?
 1.  Explain the classical non-relational data models.
