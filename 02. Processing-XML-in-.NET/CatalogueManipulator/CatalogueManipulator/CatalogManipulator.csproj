@@ -49,6 +49,7 @@
     <Compile Include="StartProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XDocumentAndLINQQueryTitleExtractor.cs" />
+    <Compile Include="XmlReaderAndXmlWriter.cs" />
     <Compile Include="XMLReaderSongTitleExtractor.cs" />
     <Compile Include="XPathExtractor.cs" />
   </ItemGroup>
