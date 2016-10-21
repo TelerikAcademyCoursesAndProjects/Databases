@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Xsl;
 
 namespace CatalogueManipulator
 {
@@ -50,6 +51,12 @@ namespace CatalogueManipulator
             var xDocument = new XDocument();
             xDocument.Add(CreateFileSystemXml.CreateFileSystemXmlTree("../../../"));
             xDocument.Save("../../traverseWithXElement.xml");
+
+            // task 14
+            var url = "../../catalog.xml";
+            XslCompiledTransform catalogueXslt = new XslCompiledTransform();
+            catalogueXslt.Load("../../catalog.xsl");
+            catalogueXslt.Transform(url, "../../catalog.html");
         }
     }
 }
