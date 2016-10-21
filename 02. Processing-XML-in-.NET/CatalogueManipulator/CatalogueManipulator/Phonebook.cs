@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 using System.Xml;
 
@@ -13,6 +14,7 @@ namespace CatalogueManipulator
             var writer = new XmlTextWriter("../../phonebook.xml", Encoding.UTF8);
             writer.WriteStartDocument();
             writer.WriteStartElement("entries");
+            Console.WriteLine("Read from phonebook.txt data and create new XML document with the data:\n");
 
             using (var reader = new StreamReader(url))
             {
@@ -41,6 +43,8 @@ namespace CatalogueManipulator
             writer.WriteEndDocument();
             writer.Close();
             writer.Dispose();
+
+            Console.WriteLine("{0}", new string('-', 50));
         }
     }
 }

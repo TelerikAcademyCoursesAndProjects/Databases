@@ -31,7 +31,7 @@ namespace CatalogueManipulator
             var albumsCreator = new XmlReaderAndXmlWriter();
             albumsCreator.CreateAlbumsXml();
 
-            // task 9 
+            // task 9 and 10
             using (var writer = new XmlTextWriter("../../traverseWithXmlWriter.xml", Encoding.UTF8))
             {
                 writer.WriteStartDocument();
