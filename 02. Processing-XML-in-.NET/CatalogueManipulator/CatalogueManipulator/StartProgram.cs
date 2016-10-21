@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace CatalogueManipulator
 {
@@ -31,7 +32,7 @@ namespace CatalogueManipulator
             var albumsCreator = new XmlReaderAndXmlWriter();
             albumsCreator.CreateAlbumsXml();
 
-            // task 9 and 10
+            // task 9 
             using (var writer = new XmlTextWriter("../../traverseWithXmlWriter.xml", Encoding.UTF8))
             {
                 writer.WriteStartDocument();
@@ -44,6 +45,11 @@ namespace CatalogueManipulator
                 writer.WriteEndDocument();
                 writer.Close();
             }
+
+            // task 10
+            var xDocument = new XDocument();
+            xDocument.Add(CreateFileSystemXml.CreateFileSystemXmlTree("../../../"));
+            xDocument.Save("../../traverseWithXElement.xml");
         }
     }
 }
