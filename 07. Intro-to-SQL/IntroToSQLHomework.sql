@@ -62,3 +62,15 @@ WHERE FirstName LIKE 'SA%'
 SELECT FirstName + ' ' + LastName AS 'Name'	
 FROM Employees 
 WHERE LastName LIKE '%ei%' 
+
+-- 13. Write a SQL query to find the salary of all employees whose salary is in the range [20000…30000].
+
+SELECT FirstName, LastName, Salary	
+FROM Employees 
+WHERE Salary BETWEEN 20000 AND	30000
+
+-- 14. Write a SQL query to find the names of all employees whose salary is 25000, 14000, 12500 or 23600.
+
+SELECT FirstName + ' ' + LastName AS FullName, Salary	
+FROM Employees  
+WHERE Salary IN (25000, 14000, 12500, 23600)
