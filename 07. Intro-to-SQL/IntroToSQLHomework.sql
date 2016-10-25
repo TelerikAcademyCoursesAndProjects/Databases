@@ -32,7 +32,7 @@ FROM Employees
 
 -- 7. Write a SQL to find the full name of each employee.
 
-SELECT FirstName,MiddleName, LastName
+SELECT FirstName + ' ' + MiddleName + ' ' + LastName AS 'Full Name'
 FROM Employees   
 
 -- 8. Write a SQL query to find the email addresses of each employee (by his first and last name). Consider that the mail domain is telerik.com. Emails should look like “John.Doe@telerik.com". The produced column should be named "Full Email Addresses".
@@ -42,5 +42,10 @@ FROM Employees
 
 -- 9. Write a SQL query to find all different employee salaries.
 
-SELECT FirstName + '.' + LastName + '@telerik.com'  AS 'Full Email Addresses'
+SELECT DISTINCT Salary
+FROM Employees 
+
+-- 10. Write a SQL query to find all information about the employees whose job title is “Sales Representative“.
+
+SELECT DISTINCT Salary
 FROM Employees 
