@@ -87,9 +87,9 @@ SELECT FirstName + ' ' + LastName AS 'Full Name', Salary
 FROM Employees  
 WHERE Salary > 50000 ORDER BY Salary DESC
 
--- 17. Write a SQL query to find the top 5 best paid employees.s
+-- 17. Write a SQL query to find the top 5 best paid employees.s BETTER WAY maybe
 
-SELECT DISTINCT TOP 5 FirstName + ' ' + LastName AS 'Full Name', Salary	
+SELECT TOP 5 FirstName + ' ' + LastName AS 'Full Name', Salary	
 FROM Employees  
 ORDER BY Salary DESC 
 
@@ -107,6 +107,13 @@ WHERE
  ORDER BY Salary DESC
  )
 )
+
+-- 18. Write a SQL query to find all employees along with their address. Use inner join with ON clause.
+
+SELECT FirstName + ' ' + LastName AS 'Full Name', AddressText
+FROM Employees
+INNER JOIN Addresses 
+ON Employees.AddressID = Addresses.AddressID
 
 
 
