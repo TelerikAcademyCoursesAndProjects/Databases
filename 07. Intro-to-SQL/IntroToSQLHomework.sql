@@ -13,3 +13,9 @@
 -- using declarative statements.
 
 -- Queries can be executed one at the time by selecting the relevant text and pressing F5
+
+-- 3. Write a SQL query to find all information about all departments (use "TelerikAcademy" database).
+USE TelerikAcademy
+
+SELECT *
+FROM Departments 
