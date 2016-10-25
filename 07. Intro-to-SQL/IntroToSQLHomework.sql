@@ -81,3 +81,32 @@ SELECT FirstName + ' ' + LastName AS 'Full Name', ManagerID
 FROM Employees  
 WHERE ManagerID IS NULL
 
+-- 16. Write a SQL query to find all employees that have salary more than 50000. Order them in decreasing order by salary.
+
+SELECT FirstName + ' ' + LastName AS 'Full Name', Salary	
+FROM Employees  
+WHERE Salary > 50000 ORDER BY Salary DESC
+
+-- 17. Write a SQL query to find the top 5 best paid employees.s
+
+SELECT DISTINCT TOP 5 FirstName + ' ' + LastName AS 'Full Name', Salary	
+FROM Employees  
+ORDER BY Salary DESC 
+
+-- 17. Second way!!! Write a SQL query to find the top 5 best paid employees.s
+
+SELECT FirstName + ' ' + LastName AS 'Full Name', Salary	
+FROM Employees  
+WHERE
+(
+ Salary IN
+ (
+ SELECT TOP (5) Salary
+ FROM Employees 
+ GROUP BY Salary
+ ORDER BY Salary DESC
+ )
+)
+
+
+
