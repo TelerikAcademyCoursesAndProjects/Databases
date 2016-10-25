@@ -48,4 +48,11 @@ FROM Employees
 -- 10. Write a SQL query to find all information about the employees whose job title is “Sales Representative“.
 
 SELECT *
-FROM Employees WHERE JobTitle = 'Sales Representative'
+FROM Employees 
+WHERE JobTitle = 'Sales Representative'
+
+-- 11. Write a SQL query to find the names of all employees whose first name starts with "SA".
+
+SELECT *
+FROM Employees 
+WHERE FirstName LIKE 'SA%'
