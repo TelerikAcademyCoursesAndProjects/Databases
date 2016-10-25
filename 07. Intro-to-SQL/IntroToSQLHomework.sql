@@ -39,3 +39,8 @@ FROM Employees
 
 SELECT FirstName + '.' + LastName + '@telerik.com'  AS 'Full Email Addresses'
 FROM Employees 
+
+-- 9. Write a SQL query to find all different employee salaries.
+
+SELECT FirstName + '.' + LastName + '@telerik.com'  AS 'Full Email Addresses'
+FROM Employees 
