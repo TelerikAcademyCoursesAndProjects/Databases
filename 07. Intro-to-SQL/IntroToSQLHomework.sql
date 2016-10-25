@@ -53,6 +53,12 @@ WHERE JobTitle = 'Sales Representative'
 
 -- 11. Write a SQL query to find the names of all employees whose first name starts with "SA".
 
-SELECT *
+SELECT FirstName + ' ' + LastName AS 'Name'	
 FROM Employees 
 WHERE FirstName LIKE 'SA%'
+
+-- 12. Write a SQL query to find the names of all employees whose last name contains "ei".
+
+SELECT FirstName + ' ' + LastName AS 'Name'	
+FROM Employees 
+WHERE LastName LIKE '%ei%' 
