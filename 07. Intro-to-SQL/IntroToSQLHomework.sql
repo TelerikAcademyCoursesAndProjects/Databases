@@ -71,6 +71,12 @@ WHERE Salary BETWEEN 20000 AND	30000
 
 -- 14. Write a SQL query to find the names of all employees whose salary is 25000, 14000, 12500 or 23600.
 
-SELECT FirstName + ' ' + LastName AS FullName, Salary	
+SELECT FirstName + ' ' + LastName AS 'Full Name', Salary	
 FROM Employees  
 WHERE Salary IN (25000, 14000, 12500, 23600)
+
+-- 15. Write a SQL query to find all employees that do not have manager.
+
+SELECT FirstName + ' ' + LastName AS 'Full Name', ManagerID	
+FROM Employees  
+WHERE ManagerID IS NULL
