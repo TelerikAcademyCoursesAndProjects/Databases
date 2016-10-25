@@ -115,5 +115,11 @@ FROM Employees
 INNER JOIN Addresses 
 ON Employees.AddressID = Addresses.AddressID
 
+-- 19. Write a SQL query to find all employees and their address. Use equijoins (conditions in the WHERE clause).
+
+SELECT FirstName + ' ' + LastName AS 'Full Name', AddressText
+FROM Employees e, Addresses a
+WHERE e.AddressID = a.AddressID
+
 
 
