@@ -80,3 +80,4 @@ WHERE Salary IN (25000, 14000, 12500, 23600)
 SELECT FirstName + ' ' + LastName AS 'Full Name', ManagerID	
 FROM Employees  
 WHERE ManagerID IS NULL
+
