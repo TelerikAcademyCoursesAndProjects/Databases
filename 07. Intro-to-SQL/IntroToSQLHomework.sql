@@ -127,5 +127,12 @@ SELECT e.FirstName + ' ' + e.LastName AS 'Employee', m.FirstName + ' ' + m.LastN
 FROM Employees e LEFT OUTER JOIN Employees m
 ON e.ManagerID = m.EmployeeID
 
+-- 21. Write a SQL query to find all employees, along with their manager and their address. Join the 3 tables: Employees e, Employees m and Addresses a.
+
+SELECT e.FirstName + ' ' + e.LastName AS Employee, 
+m.FirstName + ' ' + m.LastName AS Manager,
+a.AddressText AS 'Address'
+FROM Employees e INNER JOIN Employees m ON e.ManagerID = m.EmployeeID
+JOIN Addresses a ON e.AddressID = a.AddressID
 
 
