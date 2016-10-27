@@ -56,7 +56,7 @@ SELECT COUNT(e.ManagerID) AS 'Number Of Employees That Have Manager'
 FROM Employees e
 WHERE e.ManagerID IS NOT NULL -- moje i bez tozi posledniqt red poneje po count-a ni vra6ta vsi4ki stoinosti bez NULL!!!
 
--- 7. Write a SQL query to find the number of all employees that have no manager.
+-- 8. Write a SQL query to find the number of all employees that have no manager.
 
 SELECT COUNT(*) AS 'Number Of Employees That Don''t Have Manager'
 FROM Employees e
