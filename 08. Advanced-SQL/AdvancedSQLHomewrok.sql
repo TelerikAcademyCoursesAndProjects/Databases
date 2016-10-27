@@ -62,3 +62,10 @@ SELECT COUNT(*) AS 'Number Of Employees That Don''t Have Manager'
 FROM Employees e
 WHERE e.ManagerID IS NULL
 
+-- 9. Write a SQL query to find all departments and the average salary for each of them.
+
+SELECT d.Name AS 'Department' , AVG(e.Salary) AS 'Average salary'
+FROM Employees e
+	JOIN Departments d
+		ON e.DepartmentID = d.DepartmentID
+GROUP BY d.Name
