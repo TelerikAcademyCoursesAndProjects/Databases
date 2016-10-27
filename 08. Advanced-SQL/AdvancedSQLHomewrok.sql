@@ -91,3 +91,21 @@ FROM Employees e
 		ON e.ManagerID = m.EmployeeID
 GROUP BY m.FirstName, m.LastName
 HAVING COUNT(m.EmployeeID) = 5
+
+-- 12. Write a SQL query to find all employees along with their managers. For employees that do not have manager display the value "(no manager)".
+
+SELECT e.FirstName + ' ' + e.LastName AS 'Employee', 
+		ISNULL(m.FirstName + ' ' + m.LastName, '(no manager)') AS 'Manager'
+FROM Employees e
+	LEFT OUTER JOIN Employees m
+		ON e.ManagerID = m.EmployeeID
+
+-- 13. Write a SQL query to find the names of all employees whose last name is exactly 5 characters long. Use the built-in LEN(str) function.
+
+SELECT e.FirstName + ' ' + e.LastName AS 'Employee Whose Last Name Is 5 Characters Long'
+FROM Employees e
+WHERE LEN(e.LastName) = 5 
+
+-- 14. Write a SQL query to display the current date and time in the following format "day.month.year hour:minutes:seconds:milliseconds".
+
+SELECT CONVERT(VARCHAR, GETDATE(), 113) AS 'Current Data And Time'
