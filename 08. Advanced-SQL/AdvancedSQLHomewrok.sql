@@ -135,3 +135,25 @@ FROM Users
 WHERE
 CONVERT(VARCHAR(10), LoginTime, 102) <= CONVERT(VARCHAR(10) ,GETDATE(), 102)
 GO
+
+-- 17. Write a SQL statement to create a table Groups. Groups should have unique name (use unique constraint).
+-- Define primary key and identity column.
+
+CREATE TABLE Groups (
+	GroupId INT IDENTITY,
+	GroupName NVARCHAR(50) UNIQUE NOT NULL,
+	CONSTRAINT PK_Groups PRIMARY KEY(GroupId)
+)
+GO
+
+-- 18. Write a SQL statement to add a column GroupID to the table Users.
+-- Fill some data in this new column and as well in the `Groups table.
+-- Write a SQL statement to add a foreign key constraint between tables Users and Groups tables.
+
+ALTER TABLE Users
+ADD GroupId INT	
+
+ALTER TABLE	Users
+ADD CONSTRAINT FK_Users_Groups
+FOREIGN KEY (GroupId)
+REFERENCES Groups(GroupId)
