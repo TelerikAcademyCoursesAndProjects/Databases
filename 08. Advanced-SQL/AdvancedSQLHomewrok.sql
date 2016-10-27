@@ -69,3 +69,16 @@ FROM Employees e
 	JOIN Departments d
 		ON e.DepartmentID = d.DepartmentID
 GROUP BY d.Name
+
+-- 10. Write a SQL query to find the count of all employees in each department and for each town.
+
+SELECT COUNT(*) AS 'Number of employees', d.Name AS 'Employees in Department', t.Name AS 'Employees in town'
+FROM Employees e
+	JOIN Addresses a
+		ON e.AddressID = a.AddressID
+	JOIN Towns t
+		ON a.TownID = t.TownID
+	JOIN Departments d
+		ON e.DepartmentID = d.DepartmentID
+GROUP BY d.Name, t.Name
+ORDER BY d.Name
