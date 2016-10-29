@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TelerikDBEntityFrameworkHW
+﻿namespace TelerikDBEntityFrameworkHW
 {
     public class Start
     {
         public static void Main()
         {
-            using (var db = new DbEFHomewrokEntities())
-            {
-
-            }
+            var task1 = new NorthwindEntitiesDemoTask1();
         }
     }
 }
