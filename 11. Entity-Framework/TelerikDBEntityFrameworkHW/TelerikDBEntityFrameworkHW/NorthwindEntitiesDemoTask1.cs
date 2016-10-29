@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,10 +13,11 @@ namespace TelerikDBEntityFrameworkHW
         {
             using (var db = new DbEFHomewrokEntities())
             {
-                var employeesFirstName = db.Employees
-                    .Select(e => e.FirstName);
+                var customerName = db.Customers
+                    .Where(c => c.City=="London")
+                    .Select(c => c.ContactName);
 
-                Console.WriteLine(string.Join("\n", employeesFirstName));
+                Console.WriteLine(string.Join("\n", customerName));
             }
         }
     }
