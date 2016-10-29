@@ -12,7 +12,10 @@ namespace TelerikDBEntityFrameworkHW
         {
             using (var db = new DbEFHomewrokEntities())
             {
+                var employeesFirstName = db.Employees
+                    .Select(e => e.FirstName);
 
+                Console.WriteLine(string.Join("\n", employeesFirstName));
             }
         }
     }
