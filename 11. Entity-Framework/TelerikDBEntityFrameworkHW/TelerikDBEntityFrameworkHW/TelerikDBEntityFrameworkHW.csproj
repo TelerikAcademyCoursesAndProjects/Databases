@@ -57,7 +57,7 @@
     <Compile Include="Category.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="CreateCloneDbTask6.cs" />
+    <Compile Include="ConcurrentChangesOnSameRecordsTask7.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>

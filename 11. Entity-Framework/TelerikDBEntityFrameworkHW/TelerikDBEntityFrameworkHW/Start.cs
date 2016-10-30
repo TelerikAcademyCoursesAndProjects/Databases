@@ -36,11 +36,22 @@ namespace TelerikDBEntityFrameworkHW
             {
                 // To solve this task you need to change in the app.config file the connection string to:
                 // initial catalog=NorthwindTwin
+
+                Console.WriteLine();
+                Console.WriteLine("Task 6 Create DB Clone\n");
+
                 var result = northwindEntities.Database.CreateIfNotExists();
 
                 Console.WriteLine("Database NorthWindTwin is created: {0}", result ? "YES!" : "NO!");
+                Console.WriteLine(new string('-', 50));
+
             }
 
+            // 07. Try to open two different data contexts and perform concurrent changes on the same records.
+            // What will happen at SaveChanges() ?
+            // How to deal with it ?
+
+            ConcurrentChangesOnSameRecordsTask7.ConcurrentChangesOnSameRecords();
         }
     }
 }
