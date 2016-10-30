@@ -57,6 +57,7 @@
     <Compile Include="Category.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="ConcurrentChangesOnSameRecordsTask7.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
@@ -81,6 +82,10 @@
     <Compile Include="Employee.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeExtend.cs" />
+    <Compile Include="FindAllSalesByRegionAndPeriodTask5.cs" />
+    <Compile Include="InheritingEmployeeClassTask8.cs" />
+    <Compile Include="InsertingModifyingDeletingCustomersTask2.cs" />
     <Compile Include="LargeEmployee.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
@@ -88,6 +93,9 @@
     <Compile Include="Order.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="OrdersToCanada.cs" />
+    <Compile Include="OrdersTrackingSQLTask4.cs" />
+    <Compile Include="OrdersTrackingTask3.cs" />
     <Compile Include="Order_Detail.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
