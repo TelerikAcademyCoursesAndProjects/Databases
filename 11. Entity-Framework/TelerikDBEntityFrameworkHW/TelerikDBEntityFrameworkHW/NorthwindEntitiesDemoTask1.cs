@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TelerikDBEntityFrameworkHW
 {
@@ -11,14 +7,26 @@ namespace TelerikDBEntityFrameworkHW
     {
         public void Task1Method()
         {
+            Console.WriteLine("Task 1 create a DbContext for the Northwind database: \nThe names of all customers in London");
+
             using (var db = new DbEFHomewrokEntities())
             {
                 var customerName = db.Customers
-                    .Where(c => c.City=="London")
-                    .Select(c => c.ContactName);
+                     .Where(c => c.City == "London")
+                     .Select(c => c.ContactName);
 
                 Console.WriteLine(string.Join("\n", customerName));
             }
+            // ТЕСТ НА ЛИНК!!!! 
+            //var customerName = db.Customers
+            //        .OrderBy(c => c.ContactName)
+            //        .ThenBy(c => c.Country)
+            //        .Where(c => c.City == "London")
+            //        .Select(c => c.ContactName);
+            ////.Where(c => c.City == "London")
+            ///*.Select(c => c.ContactName)*/
+
+            //Console.WriteLine(string.Join("\n", customerName));
         }
     }
 }
