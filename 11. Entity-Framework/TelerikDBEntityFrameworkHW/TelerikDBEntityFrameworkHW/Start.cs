@@ -1,4 +1,6 @@
-﻿namespace TelerikDBEntityFrameworkHW
+﻿using System;
+
+namespace TelerikDBEntityFrameworkHW
 {
     public class Start
     {
@@ -30,7 +32,14 @@
             // 06. Create a database called NorthwindTwin with the same structure as Northwind using the features from DbContext.
             // Find for the API for schema generation in MSDN or in Google.
 
-              
+            using (var northwindEntities = new DbEFHomewrokEntities())
+            {
+                // To solve this task you need to change in the app.config file the connection string to:
+                // initial catalog=NorthwindTwin
+                var result = northwindEntities.Database.CreateIfNotExists();
+
+                Console.WriteLine("Database NorthWindTwin is created: {0}", result ? "YES!" : "NO!");
+            }
 
         }
     }
