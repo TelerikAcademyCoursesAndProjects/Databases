@@ -7,6 +7,9 @@ namespace TelerikDBEntityFrameworkHW
     {
         public static void InsertCustomer()
         {
+            Console.WriteLine();
+            Console.WriteLine("Task 2 Inserting Modifying Deleting Customers");
+
             using (var db = new DbEFHomewrokEntities())
             {
                 var customer = new Customer
@@ -22,7 +25,7 @@ namespace TelerikDBEntityFrameworkHW
                     Phone = "0899999999"
                 };
 
-                Console.WriteLine(new String('-', 50));
+                Console.WriteLine("\n");
                 Console.WriteLine("Added new customer with ContactName {0} to customers table!", customer.ContactName);
 
                 db.Customers.Add(customer);
@@ -42,8 +45,8 @@ namespace TelerikDBEntityFrameworkHW
                 customerToModify.Region = "MD";
                 customerToModify.PostalCode = "131313";
                 customerToModify.Address = "Melrob Court 13";
-   
-                Console.WriteLine(new String('-', 50));
+
+                Console.WriteLine("\n");
                 Console.WriteLine("Modified customer with ContactName {0}, changed his Country, City, Region, PostalCode and Address in customers table!", customerToModify.ContactName);
 
                 // няма Add или Remove и тн !!! това е мн важно!!! директно си записваме промените!!! 
@@ -59,8 +62,9 @@ namespace TelerikDBEntityFrameworkHW
                       .Where(c => c.CustomerID == "TEST")
                       .ToList();
 
-                Console.WriteLine(new String('-', 50));
+                Console.WriteLine("\n");
                 Console.WriteLine("Deleted customer with ContactName {0} from customers table!", customerToDelete.FirstOrDefault().ContactName);
+                Console.WriteLine(new String('-', 50));
 
                 db.Customers.Remove(customerToDelete.FirstOrDefault());
                 db.SaveChanges();

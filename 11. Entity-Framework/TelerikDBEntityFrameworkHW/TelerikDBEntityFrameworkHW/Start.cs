@@ -14,6 +14,11 @@
             InsertingModifyingDeletingCustomersTask2.InsertCustomer();
             InsertingModifyingDeletingCustomersTask2.ModifyCustomer();
             InsertingModifyingDeletingCustomersTask2.DeleteCustomer();
+
+            // 03. Write a method that finds all customers who have orders made in 1997 and shipped to Canada.
+
+            OrdersTrackingTask3.FindAllCustomersWithOrdersMadeIn1997AndShippedToCanada();
+
         }
     }
 }
