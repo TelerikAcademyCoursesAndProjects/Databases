@@ -81,6 +81,7 @@
     <Compile Include="Employee.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="FindAllSalesByRegionAndPeriodTask5.cs" />
     <Compile Include="InsertingModifyingDeletingCustomersTask2.cs" />
     <Compile Include="LargeEmployee.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>

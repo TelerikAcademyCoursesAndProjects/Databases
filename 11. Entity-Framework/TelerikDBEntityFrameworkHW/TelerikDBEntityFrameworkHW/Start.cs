@@ -22,6 +22,11 @@
             // 04. Implement previous by using native SQL query and executing it through the DbContext.
 
             OrdersTrackingSQLTask4.FindAllCustomersWithOrdersFrom1997AndShippedToCanadaUsingSQL();
+
+            // 05. Write a method that finds all the sales by specified region and period (start / end dates).
+
+            FindAllSalesByRegionAndPeriodTask5.FindAllSalesByRegionAndPeriod();
+
         }
     }
 }
