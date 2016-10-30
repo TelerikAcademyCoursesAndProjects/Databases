@@ -22,7 +22,7 @@ namespace TelerikDBEntityFrameworkHW
 
                 foreach (var item in sales)
                 {
-                    Console.WriteLine("Order has ID: {0}, Ship City: {1}, Shipped Date: {2}", item.OrderID, item.ShipCity, item.ShippedDate);
+                    Console.WriteLine("Order has ID: {0}, Ship Region: {1}, Shipped Date: {2}", item.OrderID, item.ShipRegion, item.ShippedDate);
                 }
 
                 Console.WriteLine(new string('-', 50));
