@@ -89,6 +89,8 @@
     <Compile Include="Order.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="OrdersToCanada.cs" />
+    <Compile Include="OrdersTrackingSQLTask4.cs" />
     <Compile Include="OrdersTrackingTask3.cs" />
     <Compile Include="Order_Detail.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>

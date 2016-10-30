@@ -18,7 +18,7 @@ namespace TelerikDBEntityFrameworkHW
                 Console.WriteLine(string.Join("\n", customerName));
             }
 
-            Console.WriteLine(new String('-', 50));
+            Console.WriteLine(new string('-', 50));
 
             // ТЕСТ НА ЛИНК!!!! 
             //var customerName = db.Customers

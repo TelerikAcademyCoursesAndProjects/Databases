@@ -13,14 +13,19 @@ namespace TelerikDBEntityFrameworkHW
             using (var db = new DbEFHomewrokEntities())
             {
                 var findCustomers = db.Orders
-                      .Where(o => o.OrderDate >= new DateTime(1997, 1, 1))
-                      .Where(o => o.OrderDate <= new DateTime(1997, 12, 31))
-                      .Where(o=>o.ShipCountry=="Canada")
-                      .Select(o=>o.Customer.ContactName);
+                      .Where(o => o.OrderDate.Value.Year == 1997)
+                      .Where(o => o.ShipCountry == "Canada")
+                      .Select(o => o.Customer.ContactName);
 
-                Console.WriteLine(String.Join("\n",findCustomers));
-                Console.WriteLine(new String('-', 50));
+                Console.WriteLine(string.Join("\n", findCustomers));
+                Console.WriteLine(new string('-', 50));
             }
+            // втори вариант на също добър 
+            //var findCustomers = db.Orders
+            //          .Where(o => o.OrderDate >= new DateTime(1997, 1, 1))
+            //          .Where(o => o.OrderDate <= new DateTime(1997, 12, 31))
+            //          .Where(o => o.ShipCountry == "Canada")
+            //          .Select(o => o.Customer.ContactName);
         }
     }
 }

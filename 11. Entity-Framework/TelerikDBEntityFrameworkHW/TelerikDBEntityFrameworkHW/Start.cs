@@ -19,6 +19,9 @@
 
             OrdersTrackingTask3.FindAllCustomersWithOrdersMadeIn1997AndShippedToCanada();
 
+            // 04. Implement previous by using native SQL query and executing it through the DbContext.
+
+            OrdersTrackingSQLTask4.FindAllCustomersWithOrdersFrom1997AndShippedToCanadaUsingSQL();
         }
     }
 }

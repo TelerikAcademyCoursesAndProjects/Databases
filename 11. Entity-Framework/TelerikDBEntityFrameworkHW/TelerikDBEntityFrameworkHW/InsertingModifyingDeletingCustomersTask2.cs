@@ -64,7 +64,7 @@ namespace TelerikDBEntityFrameworkHW
 
                 Console.WriteLine("\n");
                 Console.WriteLine("Deleted customer with ContactName {0} from customers table!", customerToDelete.FirstOrDefault().ContactName);
-                Console.WriteLine(new String('-', 50));
+                Console.WriteLine(new string('-', 50));
 
                 db.Customers.Remove(customerToDelete.FirstOrDefault());
                 db.SaveChanges();
@@ -77,7 +77,7 @@ namespace TelerikDBEntityFrameworkHW
             //          .Where(c => c.CustomerID == "TEST")
             //          .FirstOrDefault();
 
-            //    Console.WriteLine(new String('-', 50));
+            //    Console.WriteLine(new string('-', 50));
             //    Console.WriteLine("Deleted customer with ContactName {0} from customers table!", customerToDelete.ContactName);
 
             //    db.Customers.Remove(customerToDelete);
