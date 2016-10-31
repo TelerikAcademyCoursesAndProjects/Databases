@@ -38,7 +38,8 @@ namespace TelerikDBEntityFrameworkHW
             using (var db = new DbEFHomewrokEntities())
             {
                 var customerToModify = db.Customers
-                      .Where(c => c.CustomerID == "TEST").FirstOrDefault();
+                      .Where(c => c.CustomerID == "TEST")
+                      .FirstOrDefault();
 
                 customerToModify.Country = "USA";
                 customerToModify.City = "Annapolis";
