@@ -15,7 +15,9 @@ namespace TelerikDBEntityFrameworkHW
                 var findCustomers = db.Orders
                       .Where(o => o.OrderDate.Value.Year == 1997)
                       .Where(o => o.ShipCountry == "Canada")
-                      .Select(o => o.Customer.ContactName);
+                      .OrderBy(o => o.ShipName)
+                      .Select(o => o.Customer.ContactName)
+                      .ToList();
 
                 Console.WriteLine(string.Join("\n", findCustomers));
                 Console.WriteLine(new string('-', 50));
@@ -25,7 +27,8 @@ namespace TelerikDBEntityFrameworkHW
             //          .Where(o => o.OrderDate >= new DateTime(1997, 1, 1))
             //          .Where(o => o.OrderDate <= new DateTime(1997, 12, 31))
             //          .Where(o => o.ShipCountry == "Canada")
-            //          .Select(o => o.Customer.ContactName);
+            //          .Select(o => o.Customer.ContactName)
+            //          .ToList(); 
         }
     }
 }

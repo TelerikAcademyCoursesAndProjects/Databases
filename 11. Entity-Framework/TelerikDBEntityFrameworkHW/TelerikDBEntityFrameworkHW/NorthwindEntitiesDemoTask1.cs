@@ -13,7 +13,8 @@ namespace TelerikDBEntityFrameworkHW
             {
                 var customerName = db.Customers
                      .Where(c => c.City == "London")
-                     .Select(c => c.ContactName);
+                     .Select(c => c.ContactName)
+                     .ToList();
 
                 Console.WriteLine(string.Join("\n", customerName));
             }

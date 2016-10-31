@@ -18,7 +18,8 @@ namespace TelerikDBEntityFrameworkHW
                 var sales = db.Orders
                       .Where(o => o.ShipRegion == "Essex")
                       .Where(o => o.ShippedDate.Value.Year == 1997 || o.ShippedDate.Value.Year == 1998)
-                      .OrderBy(o => o.ShippedDate);
+                      .OrderBy(o => o.ShippedDate)
+                      .ToList();
 
                 foreach (var item in sales)
                 {
