@@ -52,6 +52,11 @@ namespace TelerikDBEntityFrameworkHW
             // How to deal with it ?
 
             ConcurrentChangesOnSameRecordsTask7.ConcurrentChangesOnSameRecords();
+
+            // 08. By inheriting the Employee entity class create a class which allows employees to access their\
+            // corresponding territories as property of type EntitySet<T>.
+
+            InheritingEmployeeClassTask8.InheritingEmployeeClass();
         }
     }
 }

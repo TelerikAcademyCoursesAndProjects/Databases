@@ -44,6 +44,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -82,7 +83,7 @@
     <Compile Include="Employee.cs">
       <DependentUpon>DbEFHomewrokEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeExtend.cs" />
+    <Compile Include="EmployeeExtended.cs" />
     <Compile Include="FindAllSalesByRegionAndPeriodTask5.cs" />
     <Compile Include="InheritingEmployeeClassTask8.cs" />
     <Compile Include="InsertingModifyingDeletingCustomersTask2.cs" />
