@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Data.Entity;
 using StudentSystem.Data;
 using StudentSystem.Models;
+using StudentSystem.Data.Migrations;
 
 namespace StudentsSystem.ConsoleClient
 {
@@ -8,6 +10,8 @@ namespace StudentsSystem.ConsoleClient
     {
         public static void Main()
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentDbContext, Configuration>());
+
             using (var db = new StudentDbContext())
             {
                 var course = new Course { Name = "Kurs", Description = "Some description", Materials = "Razni materiali" };
