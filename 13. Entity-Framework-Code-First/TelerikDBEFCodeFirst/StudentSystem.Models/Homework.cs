@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace StudentSystem.Models
 {
@@ -6,6 +7,7 @@ namespace StudentSystem.Models
     {
         public int Id { get; set; }
 
+        [MaxLength(500)]
         public string Content { get; set; }
 
         public DateTime? TimeSent { get; set; }

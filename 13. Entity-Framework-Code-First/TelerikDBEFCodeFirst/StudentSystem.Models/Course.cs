@@ -22,8 +22,10 @@ namespace StudentSystem.Models
         [MaxLength(50)]
         public string  Name { get; set; }
 
+        [MaxLength(200)]
         public string Description { get; set; }
 
+        [MaxLength(250)]
         public string Materials { get; set; }
 
         public virtual ICollection<Student> Students

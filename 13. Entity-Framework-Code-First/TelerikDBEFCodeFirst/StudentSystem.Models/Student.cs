@@ -23,7 +23,7 @@ namespace StudentSystem.Models
         [MaxLength(50)]
         public string Name { get; set; }
 
-        [Range(2,30)]
+        [Range(0, 999999)]
         public int Number { get; set; }
 
         public StudentAdditionalInfo Information { get; set; }

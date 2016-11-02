@@ -14,14 +14,23 @@ namespace StudentsSystem.ConsoleClient
 
             using (var db = new StudentDbContext())
             {
-                var course = new Course { Name = "Kurs", Description = "Some description", Materials = "Razni materiali" };
+                var course = new Course
+                {
+                    Name = "HQC",
+                    Description = "Learn fundamental computer programming knowledge and skills",
+                    Materials = "Random materials"
+                };
 
-                var homework = new Homework { Content = "Nqma sadarjanie ama karai", TimeSent = DateTime.Now };
+                var homework = new Homework
+                {
+                    Content = "Homework content is secret",
+                    TimeSent = DateTime.Now
+                };
 
                 var student = new Student
                 {
                     Name = "Haralampi Lampev",
-                    Number = 1313,
+                    Number = new Random().Next(0, 99999)
                 };
 
                 db.Courses.Add(course);

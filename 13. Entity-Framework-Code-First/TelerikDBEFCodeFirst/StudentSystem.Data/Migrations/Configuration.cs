@@ -19,7 +19,7 @@ namespace StudentSystem.Data.Migrations
                 new Student
                 {
                     Name = "First seeded student",
-                    Number = 113131
+                    Number = 13131
                 });
         }
     }
