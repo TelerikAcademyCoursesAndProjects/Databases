@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace StudentSystem.Models
 {
@@ -24,13 +20,13 @@ namespace StudentSystem.Models
 
         public int Number { get; set; }
    
-        public ICollection<Course> Courses
+        public virtual ICollection<Course> Courses
         {
             get { return this.courses; }
             set { this.courses = value; }
         }
 
-        public ICollection<Homework> Homeworks
+        public virtual ICollection<Homework> Homeworks
         {
             get { return this.homeworks; }
             set { this.homeworks = value; }
