@@ -8,6 +8,7 @@ namespace StudentSystem.Data.Migrations
         public Configuration()
         {
             this.AutomaticMigrationsEnabled = true;
+            this.AutomaticMigrationDataLossAllowed = false;
         }
 
         protected override void Seed(StudentDbContext context)
