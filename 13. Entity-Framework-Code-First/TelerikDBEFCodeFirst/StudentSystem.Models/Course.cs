@@ -22,13 +22,13 @@ namespace StudentSystem.Models
 
         public string Materials { get; set; }
 
-        public ICollection<Student> Students
+        public virtual ICollection<Student> Students
         {
             get { return this.students; }
             set { this.students = value; }
         }
 
-        public ICollection<Homework> Homeworks
+        public virtual ICollection<Homework> Homeworks
         {
             get { return this.homeworks; }
             set { this.homeworks = value; }
