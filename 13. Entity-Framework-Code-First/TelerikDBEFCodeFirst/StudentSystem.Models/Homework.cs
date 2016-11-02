@@ -7,7 +7,7 @@ namespace StudentSystem.Models
     {
         public int Id { get; set; }
 
-        [MaxLength(500)]
+        [MaxLength(501)]
         public string Content { get; set; }
 
         public DateTime? TimeSent { get; set; }
