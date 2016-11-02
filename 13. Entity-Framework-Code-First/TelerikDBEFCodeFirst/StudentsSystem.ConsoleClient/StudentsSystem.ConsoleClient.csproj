@@ -43,11 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudentSystem.Data\StudentSystem.Data.csproj">
+      <Project>{b0e277d4-b43c-4d46-9bf0-d112406ed41d}</Project>
+      <Name>StudentSystem.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentSystem.Models\StudentSystem.Models.csproj">
+      <Project>{9b5d1521-4258-496d-b635-bd72cfe4fffb}</Project>
+      <Name>StudentSystem.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
