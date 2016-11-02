@@ -30,7 +30,12 @@ namespace StudentsSystem.ConsoleClient
                 var student = new Student
                 {
                     Name = "Haralampi Lampev",
-                    Number = new Random().Next(0, 99999)
+                    Number = new Random().Next(0, 99999),
+                    Information = new StudentAdditionalInfo
+                    {
+                        Age = new Random().Next(18, 120),
+                        Country = "Bulgaria"
+                    }
                 };
 
                 db.Courses.Add(course);

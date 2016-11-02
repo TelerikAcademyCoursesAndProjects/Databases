@@ -1,5 +1,6 @@
 namespace StudentSystem.Data.Migrations
 {
+    using System;
     using Models;
     using System.Data.Entity.Migrations;
 
@@ -19,7 +20,12 @@ namespace StudentSystem.Data.Migrations
                 new Student
                 {
                     Name = "First seeded student",
-                    Number = 13131
+                    Number = 13131,
+                    Information = new StudentAdditionalInfo
+                    {
+                        Age = new Random().Next(18, 120),
+                        Country = "Bulgaria"
+                    }
                 });
         }
     }
