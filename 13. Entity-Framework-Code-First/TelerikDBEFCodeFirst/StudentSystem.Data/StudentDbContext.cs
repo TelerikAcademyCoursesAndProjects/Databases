@@ -5,6 +5,12 @@ namespace StudentSystem.Data
 {
     public class StudentDbContext : DbContext
     {
+        public StudentDbContext()
+            :base("StudentDatabase")
+        {
+
+        }
+
         public virtual IDbSet<Student> Students { get; set; }
 
         public virtual IDbSet<Course> Courses { get; set; }

@@ -31,6 +31,5 @@ namespace StudentSystem.Models
             get { return this.homeworks; }
             set { this.homeworks = value; }
         }
-
     }
 }
