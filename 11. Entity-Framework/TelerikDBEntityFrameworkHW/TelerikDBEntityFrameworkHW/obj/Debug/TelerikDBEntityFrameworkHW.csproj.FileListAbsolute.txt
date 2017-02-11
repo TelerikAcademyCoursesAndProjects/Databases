@@ -1,0 +1,10 @@
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\bin\Debug\TelerikDBEntityFrameworkHW.exe.config
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\bin\Debug\TelerikDBEntityFrameworkHW.exe
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\bin\Debug\TelerikDBEntityFrameworkHW.pdb
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\bin\Debug\EntityFramework.dll
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\bin\Debug\EntityFramework.xml
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\obj\Debug\TelerikDBEntityFrameworkHW.csprojResolveAssemblyReference.cache
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\obj\Debug\TelerikDBEntityFrameworkHW.exe
+C:\Users\Shopov\Documents\GitHub\Databases\11. Entity-Framework\TelerikDBEntityFrameworkHW\TelerikDBEntityFrameworkHW\obj\Debug\TelerikDBEntityFrameworkHW.pdb

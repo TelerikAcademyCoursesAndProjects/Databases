@@ -1,0 +1,12 @@
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\StudentSystem.Data.dll.config
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\StudentSystem.Data.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\StudentSystem.Data.pdb
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\EntityFramework.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\StudentSystem.Models.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\StudentSystem.Models.pdb
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\EntityFramework.xml
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\obj\Debug\StudentSystem.Data.csprojResolveAssemblyReference.cache
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\obj\Debug\StudentSystem.Data.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Data\obj\Debug\StudentSystem.Data.pdb
