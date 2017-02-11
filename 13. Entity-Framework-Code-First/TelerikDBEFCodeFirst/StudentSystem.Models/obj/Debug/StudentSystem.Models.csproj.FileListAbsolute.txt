@@ -1,0 +1,10 @@
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\bin\Debug\StudentSystem.Models.dll.config
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\bin\Debug\StudentSystem.Models.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\bin\Debug\StudentSystem.Models.pdb
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\bin\Debug\EntityFramework.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\bin\Debug\EntityFramework.xml
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\obj\Debug\StudentSystem.Models.csprojResolveAssemblyReference.cache
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\obj\Debug\StudentSystem.Models.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem.Models\obj\Debug\StudentSystem.Models.pdb

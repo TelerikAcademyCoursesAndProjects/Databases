@@ -1,0 +1,2 @@
+c:\users\shopov\documents\visual studio 2015\Projects\TelerikDBEFCodeFirst\StudentSystem\bin\Debug\StudentSystem.exe.config
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentSystem\bin\Debug\StudentSystem.exe.config

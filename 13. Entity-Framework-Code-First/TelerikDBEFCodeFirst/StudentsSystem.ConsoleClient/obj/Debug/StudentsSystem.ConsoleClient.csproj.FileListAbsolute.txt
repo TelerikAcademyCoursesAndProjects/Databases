@@ -1,0 +1,14 @@
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.ConsoleClient.exe.config
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.ConsoleClient.exe
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.ConsoleClient.pdb
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\EntityFramework.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentSystem.Data.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentSystem.Models.dll
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentSystem.Data.pdb
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentSystem.Models.pdb
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\EntityFramework.xml
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\obj\Debug\StudentsSystem.ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\obj\Debug\StudentsSystem.ConsoleClient.exe
+C:\Users\Shopov\Documents\GitHub\Databases\13. Entity-Framework-Code-First\TelerikDBEFCodeFirst\StudentsSystem.ConsoleClient\obj\Debug\StudentsSystem.ConsoleClient.pdb
